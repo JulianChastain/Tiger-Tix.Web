@@ -32,3 +32,4 @@ C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net
 C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Tiger-Tix.Web.RazorTargetAssemblyInfo.cs
 C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Tiger-Tix.Web.Views.pdb
 C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Tiger-Tix.Web.csproj.CopyComplete
+C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs

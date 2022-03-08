@@ -1,5 +1,5 @@
 ﻿@page
-@model Tiger_Tix.Web.ViewModels.IndexViewModel
+@model IndexViewModel
 
 @{
     Layout = null;
@@ -14,9 +14,11 @@
 </head>
 <body>
 <div>
-    <p>Website displays!</p> 
-    <input type="text" name="UserName"/>
-    <input type="submit" value="Store Name"/>
+    <p>Welcome to Tiger Tix!</p>
+    <form method="post">
+        <input type="text" name="UserName"/>
+        <input type="submit" value="Store Name"/>
+    </form>
 </div>
 </body>
 </html>
