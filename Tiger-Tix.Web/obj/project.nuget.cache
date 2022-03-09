@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yXALqtgxoFVYjFa5MjMI43XXq/n5jo8yb1NU3YKCxdxLTsCYfHMpUYkpusaHO5KemAym6VgZcTykcPbl5Yf94Q==",
+  "success": true,
+  "projectFilePath": "/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/Tiger-Tix.Web.csproj",
+  "expectedPackageFiles": [
+    "/home/julianc/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

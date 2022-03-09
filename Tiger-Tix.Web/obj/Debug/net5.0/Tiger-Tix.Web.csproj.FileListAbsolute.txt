@@ -1,0 +1,71 @@
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/bin/Debug/net5.0/appsettings.Development.json
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/bin/Debug/net5.0/appsettings.json
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.exe
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.deps.json
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.runtimeconfig.json
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.runtimeconfig.dev.json
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.dll
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/bin/Debug/net5.0/ref/Tiger-Tix.Web.dll
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.pdb
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.csproj.AssemblyReference.cache
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.AssemblyInfoInputs.cache
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.AssemblyInfo.cs
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.csproj.CoreCompileInputs.cache
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/staticwebassets/Tiger-Tix.Web.StaticWebAssets.Manifest.cache
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/staticwebassets/Tiger-Tix.Web.StaticWebAssets.xml
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/scopedcss/bundle/Tiger-Tix.Web.styles.css
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.RazorTargetAssemblyInfo.cache
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.dll
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/ref/Tiger-Tix.Web.dll
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.pdb
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.genruntimeconfig.cache
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.Views.dll
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.Views.pdb
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.RazorAssemblyInfo.cache
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.RazorAssemblyInfo.cs
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.TagHelpers.input.cache
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.TagHelpers.output.cache
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.RazorCoreGenerate.cache
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Razor/Views/App/index.cshtml.g.cs
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.RazorTargetAssemblyInfo.cs
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.Views.pdb
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.csproj.CopyComplete
+C:/Users/Julian Chastain/Code Projects/Tiger-Tix.Web/Tiger-Tix.Web/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/bin/Debug/net5.0/appsettings.Development.json
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/bin/Debug/net5.0/appsettings.json
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.deps.json
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.runtimeconfig.json
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.runtimeconfig.dev.json
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.dll
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/bin/Debug/net5.0/ref/Tiger-Tix.Web.dll
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.pdb
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.Views.dll
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/bin/Debug/net5.0/Tiger-Tix.Web.Views.pdb
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.csproj.AssemblyReference.cache
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.GeneratedMSBuildEditorConfig.editorconfig
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.AssemblyInfoInputs.cache
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.AssemblyInfo.cs
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.csproj.CoreCompileInputs.cache
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.MvcApplicationPartsAssemblyInfo.cache
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.RazorAssemblyInfo.cache
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.RazorAssemblyInfo.cs
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/staticwebassets/Tiger-Tix.Web.StaticWebAssets.Manifest.cache
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/staticwebassets/Tiger-Tix.Web.StaticWebAssets.xml
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/scopedcss/bundle/Tiger-Tix.Web.styles.css
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.TagHelpers.input.cache
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.TagHelpers.output.cache
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.RazorCoreGenerate.cache
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Razor/Views/App/index.cshtml.g.cs
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Razor/Views/App/SplashPage.cshtml.g.cs
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.RazorTargetAssemblyInfo.cache
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.RazorTargetAssemblyInfo.cs
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.Views.pdb
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.dll
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/ref/Tiger-Tix.Web.dll
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.pdb
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.genruntimeconfig.cache
+/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/Debug/net5.0/Tiger-Tix.Web.csproj.CopyComplete
