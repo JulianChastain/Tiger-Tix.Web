@@ -1,4 +1,4 @@
-@model TModel
+@model UserViewModel
 
 @{
     Layout = null;
@@ -8,11 +8,15 @@
 
 <html>
 <head>
-    <title>title</title>
+    <title>Tiger Tix</title>
 </head>
 <body>
 <div>
-      
+    <p>
+        Welcome @Model.Name!
+        <br/>
+        You are a @Model.UserRole
+    </p>
 </div>
 </body>
 </html>

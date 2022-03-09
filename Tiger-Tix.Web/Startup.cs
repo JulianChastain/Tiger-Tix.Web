@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Tiger_Tix.Web.Services;
 
 namespace Tiger_Tix.Web
 {
@@ -18,6 +19,7 @@ namespace Tiger_Tix.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddSingleton<ILoginService, MockLoginService>();
             services.AddRazorPages();
         }
 

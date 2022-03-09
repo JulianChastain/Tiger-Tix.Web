@@ -1,5 +1,5 @@
 ﻿@page
-@model IndexViewModel
+@model LoginInfoViewModel
 
 @{
     Layout = null;
@@ -15,9 +15,11 @@
 <body>
 <div>
     <p>Welcome to Tiger Tix!</p>
+    <p>Please Login</p>
     <form method="post">
-        <input type="text" name="UserName"/>
-        <input type="submit" value="Store Name"/>
+        <input type="text" name="UserName" value="Username"/>
+        <input type="text" name="PassWord" value="Password"/>
+        <input type="submit" value="Login"/>
     </form>
 </div>
 </body>

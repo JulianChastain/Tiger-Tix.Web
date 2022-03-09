@@ -1,10 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Tiger_Tix.Web.ViewModels;
+using Tiger_Tix.Web.Models;
+using Tiger_Tix.Web.Services;
 
 namespace Tiger_Tix.Web
 {
     public class AppController : Controller
     {
+        private ILoginService LoginService;
+        public AppController(ILoginService loginService)
+        {
+            LoginService = loginService;
+        }
         //[AcceptVerbs(HttpVerbs.Get|HttpVerbs.Post)] 
         public IActionResult Index()
         {
@@ -12,9 +18,9 @@ namespace Tiger_Tix.Web
         }
 
         [HttpPost]
-        public IActionResult Index(IndexViewModel model)
+        public IActionResult Index(LoginInfoViewModel model)
         {
-            return View(model);
+            return View("SplashPage",LoginService.LoginWithCredentials(model.UserName, model.PassWord));
         }
     }
 }
