@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Tiger_Tix.Web.Models
 {
     public enum Role
@@ -11,5 +13,6 @@ namespace Tiger_Tix.Web.Models
     {
         public string Name;
         public Role UserRole;
+        public List<EventModel> AvailableEvents;
     }
 }

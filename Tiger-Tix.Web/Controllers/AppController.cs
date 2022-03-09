@@ -7,11 +7,13 @@ namespace Tiger_Tix.Web
     public class AppController : Controller
     {
         private ILoginService LoginService;
-        public AppController(ILoginService loginService)
+        private IEventRepository Events;
+        public AppController(ILoginService loginService, IEventRepository events)
         {
             LoginService = loginService;
+            Events = events;
         }
-        //[AcceptVerbs(HttpVerbs.Get|HttpVerbs.Post)] 
+        
         public IActionResult Index()
         {
             return View();
@@ -20,7 +22,9 @@ namespace Tiger_Tix.Web
         [HttpPost]
         public IActionResult Index(LoginInfoViewModel model)
         {
-            return View("SplashPage",LoginService.LoginWithCredentials(model.UserName, model.PassWord));
+            UserViewModel UserInfo = LoginService.LoginWithCredentials(model.UserName, model.PassWord);
+            UserInfo.AvailableEvents = Events.Events();
+            return View("SplashPage", UserInfo);
         }
     }
 }

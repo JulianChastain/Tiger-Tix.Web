@@ -13,10 +13,16 @@
 <body>
 <div>
     <p>
-        Welcome @Model.Name!
+        <h1>Welcome @Model.Name!</h1>
         <br/>
         You are a @Model.UserRole
     </p>
+    <br/>
+    @Html.ListBox( "Available Events are:", Model.AvailableEvents.Select( e => new SelectListItem
+            {
+                Text = e.ToString(),
+                Value = Model.AvailableEvents.IndexOf(e).ToString()
+            }))
 </div>
 </body>
 </html>

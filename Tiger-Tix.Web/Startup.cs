@@ -20,6 +20,7 @@ namespace Tiger_Tix.Web
         {
             services.AddControllersWithViews();
             services.AddSingleton<ILoginService, MockLoginService>();
+            services.AddSingleton<IEventRepository, MockEventRepository>();
             services.AddRazorPages();
         }
 
