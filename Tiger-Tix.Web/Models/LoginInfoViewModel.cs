@@ -2,7 +2,7 @@
 {
     public class LoginInfoViewModel
     {
-        public string UserName;
-        public string PassWord;
+        public string Username { get; set; }
+        public string Password { get; set; }
     }
 }

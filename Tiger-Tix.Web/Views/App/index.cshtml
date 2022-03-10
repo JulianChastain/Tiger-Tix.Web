@@ -16,11 +16,12 @@
 <div>
     <p>Welcome to Tiger Tix!</p>
     <p>Please Login</p>
-    <form method="post">
-        <input type="text" name="UserName" value="Username"/>
-        <input type="text" name="PassWord" value="Password"/>
+    @using (Html.BeginForm("Index", "App", FormMethod.Post))
+    {
+        <span>Username: </span>@Html.TextBoxFor(m => m.Username)<br/>
+        <span>Password: </span>@Html.TextBoxFor(m => m.Password)<br/>
         <input type="submit" value="Login"/>
-    </form>
+    }
 </div>
 </body>
 </html>

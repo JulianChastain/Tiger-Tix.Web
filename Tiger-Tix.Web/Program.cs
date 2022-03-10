@@ -11,6 +11,9 @@ using Tiger_Tix.Web.Services;
 
 namespace Tiger_Tix.Web
 {
+    /*
+     * Literally this entire class is boilerplate, should never need to be changed
+     */
     public class Program
     {
         public static void Main(string[] args)

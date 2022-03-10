@@ -13,7 +13,8 @@ namespace Tiger_Tix.Web
             LoginService = loginService;
             Events = events;
         }
-        
+       
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
@@ -22,7 +23,7 @@ namespace Tiger_Tix.Web
         [HttpPost]
         public IActionResult Index(LoginInfoViewModel model)
         {
-            UserViewModel UserInfo = LoginService.LoginWithCredentials(model.UserName, model.PassWord);
+            UserViewModel UserInfo = LoginService.LoginWithCredentials(model.Username, model.Password);
             UserInfo.AvailableEvents = Events.Events();
             return View("SplashPage", UserInfo);
         }

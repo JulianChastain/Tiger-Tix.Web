@@ -8,24 +8,26 @@
     "net5.0": []
   },
   "packageFolders": {
-    "/home/julianc/.nuget/packages/": {}
+    "C:\\Users\\Julian Chastain\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/Tiger-Tix.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Julian Chastain\\Code Projects\\Tiger-Tix.Web\\Tiger-Tix.Web\\Tiger-Tix.Web.csproj",
       "projectName": "Tiger-Tix.Web",
-      "projectPath": "/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/Tiger-Tix.Web.csproj",
-      "packagesPath": "/home/julianc/.nuget/packages/",
-      "outputPath": "/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/obj/",
+      "projectPath": "C:\\Users\\Julian Chastain\\Code Projects\\Tiger-Tix.Web\\Tiger-Tix.Web\\Tiger-Tix.Web.csproj",
+      "packagesPath": "C:\\Users\\Julian Chastain\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Julian Chastain\\Code Projects\\Tiger-Tix.Web\\Tiger-Tix.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/julianc/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Julian Chastain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -53,12 +55,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -67,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.405/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -14,17 +14,21 @@ namespace Tiger_Tix.Web
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        /*
+         * Here we do dependency injection to ensure that our services are available to the controller
+         */
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            //When the AppController class is instantiated, this services will be passed implicitly
             services.AddSingleton<ILoginService, MockLoginService>();
             services.AddSingleton<IEventRepository, MockEventRepository>();
             services.AddRazorPages();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /*
+         * Configures HTTP request pipeline. this will rarely be changed
+         */
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseStaticFiles();

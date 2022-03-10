@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yXALqtgxoFVYjFa5MjMI43XXq/n5jo8yb1NU3YKCxdxLTsCYfHMpUYkpusaHO5KemAym6VgZcTykcPbl5Yf94Q==",
+  "dgSpecHash": "J3YLbQqYRsPnrGHIeQOlM/xg2nNzvdJeWh/CvfcnLVdZNmS+NH+2YQKQn8Uv3LS6e9IbMKfMn2ECnq+JfeqLWA==",
   "success": true,
-  "projectFilePath": "/home/julianc/Documents/projects/RiderProjects/Tiger-Tix.Web/Tiger-Tix.Web.csproj",
-  "expectedPackageFiles": [
-    "/home/julianc/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Julian Chastain\\Code Projects\\Tiger-Tix.Web\\Tiger-Tix.Web\\Tiger-Tix.Web.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
