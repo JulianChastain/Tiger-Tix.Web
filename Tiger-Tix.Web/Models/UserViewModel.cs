@@ -19,6 +19,7 @@ namespace Tiger_Tix.Web.Models
         }
         
         public UserViewModel(){}
+        public string Id { get; set; }
         public string Name;
         public Role UserRole;
         public List<EventModel> AvailableEvents;
