@@ -2,7 +2,7 @@
 @model LoginInfoViewModel
 
 @{
-    Layout = null;
+    // Layout = null;
     ViewBag.Title = "Tiger Tix Web Interface";
 }
 
@@ -18,8 +18,8 @@
     <p>Please Login</p>
     @using (Html.BeginForm("Index", "App", FormMethod.Post))
     {
-        <span>Username: </span>@Html.TextBoxFor(m => m.Username)<br/>
-        <span>Password: </span>@Html.TextBoxFor(m => m.Password)<br/>
+        <span>Username: </span>@Html.TextBoxFor(m => m.Username, new {@placeholder = "Username"})<br/>
+        <span>Password: </span>@Html.TextBoxFor(m => m.Password, new {@placeholder = "Password"})<br/>
         <input type="submit" value="Login"/>
     }
 </div>

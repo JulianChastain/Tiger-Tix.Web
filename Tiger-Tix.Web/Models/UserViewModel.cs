@@ -14,5 +14,6 @@ namespace Tiger_Tix.Web.Models
         public string Name;
         public Role UserRole;
         public List<EventModel> AvailableEvents;
+        public List<EventModel> BoughtEvents;
     }
 }

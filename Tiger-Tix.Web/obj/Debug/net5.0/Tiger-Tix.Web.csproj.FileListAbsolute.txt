@@ -41,7 +41,6 @@ C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\bin\Debug\net
 C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\bin\Debug\net5.0\Tiger-Tix.Web.runtimeconfig.json
 C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\bin\Debug\net5.0\Tiger-Tix.Web.runtimeconfig.dev.json
 C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\bin\Debug\net5.0\Tiger-Tix.Web.dll
-C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\bin\Debug\net5.0\ref\Tiger-Tix.Web.dll
 C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\bin\Debug\net5.0\Tiger-Tix.Web.pdb
 C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\bin\Debug\net5.0\Tiger-Tix.Web.Views.dll
 C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\bin\Debug\net5.0\Tiger-Tix.Web.Views.pdb
@@ -70,3 +69,4 @@ C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net
 C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Tiger-Tix.Web.pdb
 C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Tiger-Tix.Web.genruntimeconfig.cache
 C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Tiger-Tix.Web.csproj.CopyComplete
+C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\bin\Debug\net5.0\ref\Tiger-Tix.Web.dll
