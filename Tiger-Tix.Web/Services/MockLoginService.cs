@@ -21,5 +21,10 @@ namespace Tiger_Tix.Web.Services
                 };
             return new UserViewModel();
         }
+
+        public void AddUser(UserViewModel user)
+        {
+            return;
+        }
     }
 }

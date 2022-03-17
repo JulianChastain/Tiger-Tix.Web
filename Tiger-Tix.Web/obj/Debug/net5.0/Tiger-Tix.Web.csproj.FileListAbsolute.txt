@@ -106,3 +106,7 @@ C:\Users\charl\source\repos\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\ref\Tig
 C:\Users\charl\source\repos\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Tiger-Tix.Web.pdb
 C:\Users\charl\source\repos\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Tiger-Tix.Web.genruntimeconfig.cache
 C:\Users\charl\source\repos\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Tiger-Tix.Web.csproj.CopyComplete
+C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Razor\Views\App\AdministratorView.cshtml.g.cs
+C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Razor\Views\App\BuyTicket.cshtml.g.cs
+C:\Users\Julian Chastain\Code Projects\Tiger-Tix.Web\Tiger-Tix.Web\obj\Debug\net5.0\Razor\Views\App\CreateAccount.cshtml.g.cs

@@ -3,22 +3,18 @@
 
 @{
     Layout = "_Layout";
-    ViewBag.Title = "Tiger Tix Web Interface";
 }
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <title>@ViewBag.Title</title>
+    <title></title>
 </head>
 <body>
-<div class="d-flex justify-content-center" style="margin-top: 30px;">
-    @using (Html.BeginForm("Index", "App", FormMethod.Post))
-    {
-        <p>Welcome to Tiger Tix!</p>
-        <p>The best place for a tiger to buy event tickets</p>
-        <p>Please Login:</p>
+<div>
+    @using(@Html.BeginForm("CreateAccount", "App", FormMethod.Post)){
+        <p>Here is where a user can create an account</p>
         <div class="row">
             <div class="col-sm">
                 <label for="user" class="form-label">Username/Email</label>
@@ -35,8 +31,7 @@
                 @Html.TextBoxFor(m => m.Password, new {@placeholder = "Password", @id="pass", @type="password", @class="form-control"})
             </div>
         </div> <br/>
-        <input type="submit" value="Login" class="btn btn-primary"/>
-        <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("CreateAccount")'">Make New Account</button>
+        <input type="submit" class="btn btn-primary" value="Create Account"/>
     }
 </div>
 </body>
