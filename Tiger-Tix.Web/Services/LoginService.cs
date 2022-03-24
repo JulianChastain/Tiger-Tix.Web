@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Tiger_Tix.Web.Models;
 
@@ -17,29 +19,18 @@ namespace Tiger_Tix.Web.Services
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer(_configuration["ConnectionString:DefaultConnection"]);
+            string connection = _configuration["ConnectionString:DefaultConnection"];
+            optionsBuilder.UseSqlServer(connection);
         }
-        
-        public UserViewModel LoginWithCredentials(string name, string password)
+
+        IEnumerable<UserViewModel> ILoginService.Users()
         {
-            if (name == "julian")
-                return new UserViewModel ()
-                {
-                    Name = name,
-                    UserRole = Role.Administrator
-                };
-            if (name == "charlie" || name == "spencer")
-                return new UserViewModel()
-                {
-                    Name = name,
-                    UserRole = Role.Student
-                };
-            return new UserViewModel();
+            return Users;
         }
 
         public void AddUser(UserViewModel user)
         {
-            return;
+            Users.Add(user);
         }
         
     }
