@@ -18,6 +18,7 @@ namespace Tiger_Tix.Web
         public IActionResult Index()
         {
             ViewBag.error = false;
+            ViewBag.noaccount = false;
             return View();
         }
 
@@ -25,13 +26,14 @@ namespace Tiger_Tix.Web
         public IActionResult Index(LoginInfoViewModel model)
         {
             UserViewModel UserInfo = LoginService.LoginWithCredentials(model);
-            if (UserInfo.UserRole != Role.InvalidLogin)
+            if (UserInfo.UserRole != Role.InvalidLogin && UserInfo.UserRole != Role.InvalidPassword)
             {
                 UserInfo.AvailableEvents = Events.Events();
                 return View("SplashPage", UserInfo);
             }
 
-            ViewBag.error = true;
+            ViewBag.error = UserInfo.UserRole == Role.InvalidPassword;
+            ViewBag.noaccount = UserInfo.UserRole == Role.InvalidLogin;
             return View("index");
         }
 

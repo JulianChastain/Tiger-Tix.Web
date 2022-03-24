@@ -16,6 +16,7 @@ namespace Tiger_Tix.Web.Services
                 new()
                 {
                     Name = "julian",
+                    Email = "julian@clemson.edu",
                     UserRole = Role.Administrator,
                     Passhash = BCrypt.Net.BCrypt.HashPassword("password")
                 },
@@ -23,12 +24,14 @@ namespace Tiger_Tix.Web.Services
                 new()
                 {
                     Name = "spencer",
+                    Email = "spencer@clemson.edu",
                     UserRole = Role.Student,
                     Passhash = BCrypt.Net.BCrypt.HashPassword("password")
                 },
                 new()
                 {
                     Name = "charlie",
+                    Email = "charlie@clemson.edu",
                     UserRole = Role.Student,
                     Passhash = BCrypt.Net.BCrypt.HashPassword("password")
                 }

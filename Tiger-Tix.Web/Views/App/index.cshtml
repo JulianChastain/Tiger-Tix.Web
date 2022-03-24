@@ -20,22 +20,27 @@
         <p>The best place for a tiger to buy event tickets</p>
         <p>Please Login:</p>
         <div class="row">
-            <div class="col-sm">
-                <label for="user" class="form-label">Username/Email</label>
-            </div>
             <div class="col-md">
+                <label for="user" class="form-label">Email</label>
+            </div>
+            <div class="col-lg">
                 @Html.TextBoxFor(m => m.Email, new {@placeholder = "name@clemson.edu", @id = "user", @class="form-control"})
             </div>
         </div>
         <div class="row">
-            <div class="col-sm">
+            <div class="col-md">
                 <label for="pass" class="form-label">Password</label>
             </div>
-            <div class="col-md">
+            <div class="col-lg">
                 @Html.TextBoxFor(m => m.Password, new {@placeholder = "Password", @id="pass", @type="password", @class="form-control"})
             </div>
         </div> <br/>
-        <div style="@(ViewBag.error ? "display: block" : "display: none")" class="text-danger">The username and password you entered is not correct, please try again <br/></div>
+        <div style="@(ViewBag.error ? "display: block" : "display: none")" class="text-danger">The email and password you entered is not correct, please try again <br/></div>
+        <div style="@(ViewBag.noaccount ? "display: block" : "display: none")" class="text-danger">
+            The email you entered was not associated with any account<br/>
+            Would you like to <a href="@Url.Action("CreateAccount")">make an account?</a><br/>
+        </div>
+                                                                                                                                                                        
         <input type="submit" value="Login" class="btn btn-primary"/>
         <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("CreateAccount")'">Make New Account</button>
     }
