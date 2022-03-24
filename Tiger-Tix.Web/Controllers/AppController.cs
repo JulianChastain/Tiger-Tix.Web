@@ -25,6 +25,9 @@ namespace Tiger_Tix.Web
         [HttpPost]
         public IActionResult Index(LoginInfoViewModel model)
         {
+            if (model.Password == null || model.Password == "")
+                model.Password = "obviously_wrong_password_value";
+            
             UserViewModel UserInfo = LoginService.LoginWithCredentials(model);
             if (UserInfo.UserRole != Role.InvalidLogin && UserInfo.UserRole != Role.InvalidPassword)
             {
