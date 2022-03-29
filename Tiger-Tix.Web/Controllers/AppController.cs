@@ -17,15 +17,42 @@ namespace Tiger_Tix.Web
         [HttpGet]
         public IActionResult Index()
         {
+            ViewBag.error = false;
+            ViewBag.noaccount = false;
             return View();
         }
 
         [HttpPost]
         public IActionResult Index(LoginInfoViewModel model)
         {
-            UserViewModel UserInfo = LoginService.LoginWithCredentials(model.Username, model.Password);
-            UserInfo.AvailableEvents = Events.Events();
-            return View("SplashPage", UserInfo);
+            if (model.Password == null || model.Password == "")
+                model.Password = "obviously_wrong_password_value";
+            
+            UserViewModel UserInfo = LoginService.LoginWithCredentials(model);
+            if (UserInfo.UserRole != Role.InvalidLogin && UserInfo.UserRole != Role.InvalidPassword)
+            {
+                UserInfo.AvailableEvents = Events.Events();
+                return View("SplashPage", UserInfo);
+            }
+
+            ViewBag.error = UserInfo.UserRole == Role.InvalidPassword;
+            ViewBag.noaccount = UserInfo.UserRole == Role.InvalidLogin;
+            return View("index");
+        }
+
+        public IActionResult CreateAccount()
+        {
+            return View();
+        }
+        
+        
+        [HttpPost]
+        public IActionResult CreateAccount(UserViewModel newUser)
+        {
+            newUser.AvailableEvents = Events.Events();
+            newUser.UserRole = Role.Guest;
+            LoginService.AddUser(newUser);
+            return View("SplashPage", newUser);
         }
     }
 }
