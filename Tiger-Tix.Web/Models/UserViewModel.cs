@@ -16,6 +16,7 @@ namespace Tiger_Tix.Web.Models
         public UserViewModel(LoginInfoViewModel u)
         {
             Email = u.Email;
+            Passhash = BCrypt.Net.BCrypt.HashPassword(u.Password);
             UserRole = Role.InvalidLogin;
         }
         
