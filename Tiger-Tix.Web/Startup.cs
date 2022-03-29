@@ -25,7 +25,7 @@ namespace Tiger_Tix.Web
             services.AddDbContext<LoginService>(
                 cfg => { cfg.UseSqlServer();}
             );
-            services.AddSingleton<ILoginService, MockLoginService>();
+            services.AddSingleton<ILoginService, LoginService>();
             services.AddSingleton<IEventRepository, MockEventRepository>();
             services.AddRazorPages();
         }
