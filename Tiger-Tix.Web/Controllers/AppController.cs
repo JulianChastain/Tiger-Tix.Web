@@ -47,9 +47,10 @@ namespace Tiger_Tix.Web
         
         
         [HttpPost]
-        public IActionResult CreateAccount(LoginInfoViewModel loginInfo)
+        public IActionResult CreateAccount(UserViewModel newUser)
         {
-            UserViewModel newUser = new UserViewModel(loginInfo);
+            newUser.AvailableEvents = Events.Events();
+            newUser.UserRole = Role.Guest;
             LoginService.AddUser(newUser);
             return View("SplashPage", newUser);
         }
