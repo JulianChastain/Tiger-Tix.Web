@@ -53,7 +53,9 @@ namespace Tiger_Tix.Web.Migrations
             modelBuilder.Entity("Tiger_Tix.Web.Models.UserViewModel", b =>
                 {
                     b.Property<int>("Id")
-                        .HasColumnType("int");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");

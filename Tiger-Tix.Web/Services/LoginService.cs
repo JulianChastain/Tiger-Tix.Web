@@ -23,14 +23,29 @@ namespace Tiger_Tix.Web.Services
             optionsBuilder.UseSqlServer(connection);
         }
 
-        IEnumerable<UserViewModel> ILoginService.Users()
+        public UserViewModel LoginWithCredentials(LoginInfoViewModel userInfo)
         {
-            return Users;
+            var possible_match = from user in Users where user.Email == userInfo.Email select user;
+            if (possible_match.Any())
+            {
+                foreach (var u in possible_match)
+                {
+                    if (BCrypt.Net.BCrypt.Verify(userInfo.Password, u.Passhash))
+                        return u;
+                }
+
+                var val = new UserViewModel();
+                val.UserRole = Role.InvalidPassword;
+                return val;
+
+            }
+            return new UserViewModel();
         }
 
         public void AddUser(UserViewModel user)
         {
             Users.Add(user);
+            SaveChanges();
         }
         
     }

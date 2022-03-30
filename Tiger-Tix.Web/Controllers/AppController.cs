@@ -51,6 +51,7 @@ namespace Tiger_Tix.Web
         {
             newUser.AvailableEvents = Events.Events();
             newUser.UserRole = Role.Guest;
+            newUser.Passhash = BCrypt.Net.BCrypt.HashPassword(newUser.Passhash);
             LoginService.AddUser(newUser);
             return View("SplashPage", newUser);
         }

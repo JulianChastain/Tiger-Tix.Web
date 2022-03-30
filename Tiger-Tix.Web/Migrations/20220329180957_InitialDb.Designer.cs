@@ -10,8 +10,8 @@ using Tiger_Tix.Web.Services;
 namespace Tiger_Tix.Web.Migrations
 {
     [DbContext(typeof(LoginService))]
-    [Migration("20220329164747_Initial")]
-    partial class Initial
+    [Migration("20220329180957_InitialDb")]
+    partial class InitialDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,6 +27,15 @@ namespace Tiger_Tix.Web.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("RemainingTickets")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Time")
+                        .HasColumnType("datetime2");
 
                     b.Property<int?>("UserViewModelId")
                         .HasColumnType("int");
@@ -46,7 +55,9 @@ namespace Tiger_Tix.Web.Migrations
             modelBuilder.Entity("Tiger_Tix.Web.Models.UserViewModel", b =>
                 {
                     b.Property<int>("Id")
-                        .HasColumnType("int");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
