@@ -10,6 +10,12 @@
 <html>
 <head>
     <title>Tiger Tix</title>
+    <script>
+        function myTix()
+    {
+        alert("There are 100 tickets remaining for this event.")
+    }
+    </script>
 </head>
 <body>
 <div>
@@ -22,7 +28,9 @@
     @Html.ListBox( "Available Events are:", Model.AvailableEvents.Select( e => new SelectListItem
             {
                 Text = e.ToString(),
-                Value = Model.AvailableEvents.IndexOf(e).ToString()
+                Value = Model.AvailableEvents.IndexOf(e).ToString(),
+                onselect = myTix
+    
             }))
 </div>
 </body>
