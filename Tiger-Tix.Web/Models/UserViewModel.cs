@@ -31,7 +31,7 @@ namespace Tiger_Tix.Web.Models
         public string Email { get; set; }
         public string Passhash { get; set; }
         public Role UserRole { get; set; }
-        public List<EventModel> AvailableEvents { get; set; }
-        public List<EventModel> BoughtEvents { get; set; }
+        // public List<EventModel> AvailableEvents { get; set; }
+        // public List<EventModel> BoughtEvents { get; set; }
     }
 }
