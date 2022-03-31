@@ -10,6 +10,14 @@
 <html>
 <head>
     <title>Tiger Tix</title>
+    <script>
+        function myTix()
+    {
+        alert("There are 100 tickets remaining for this event.")
+    }
+    $("#Available_Events_are:").change(myTix);
+    //http://jsfiddle.net/pD56G/1/
+    </script>
 </head>
 <body>
 <div>
@@ -24,7 +32,8 @@
     }
     @Html.ListBox( "Available Events are:", available.Select( e => new SelectListItem
             {
-                Text = e.ToString(),
+                Text = e.ToString()
+                
             }))
 </div>
 </body>
