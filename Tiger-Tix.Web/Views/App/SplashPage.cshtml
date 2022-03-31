@@ -15,7 +15,7 @@
     {
         alert("There are 100 tickets remaining for this event.")
     }
-    $("select").change( () => console.log("works"));
+    $("#Available_Events_are:").change(myTix);
     //http://jsfiddle.net/pD56G/1/
     </script>
 </head>
@@ -32,9 +32,8 @@
     }
     @Html.ListBox( "Available Events are:", available.Select( e => new SelectListItem
             {
-                Text = e.ToString(),
-                onselect = myTix
-    
+                Text = e.ToString()
+                
             }))
 </div>
 </body>
