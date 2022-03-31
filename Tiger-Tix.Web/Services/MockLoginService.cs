@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Tiger_Tix.Web.Models;
 
@@ -5,26 +8,45 @@ namespace Tiger_Tix.Web.Services
 {
     public class MockLoginService : ILoginService
     {
-        public UserViewModel LoginWithCredentials(string name, string password)
+        public List<UserViewModel> Users { get; set; }
+        public MockLoginService()
         {
-            if (name == "julian")
-                return new UserViewModel ()
+            Users = new List<UserViewModel>
+            {
+                new()
                 {
-                    Name = name,
-                    UserRole = Role.Administrator
-                };
-            if (name == "charlie" || name == "spencer")
-                return new UserViewModel()
+                    Name = "julian",
+                    Email = "julian@clemson.edu",
+                    UserRole = Role.Administrator,
+                    Passhash = BCrypt.Net.BCrypt.HashPassword("password")
+                },
+
+                new()
                 {
-                    Name = name,
-                    UserRole = Role.Student
-                };
-            return new UserViewModel();
+                    Name = "spencer",
+                    Email = "spencer@clemson.edu",
+                    UserRole = Role.Student,
+                    Passhash = BCrypt.Net.BCrypt.HashPassword("password")
+                },
+                new()
+                {
+                    Name = "charlie",
+                    Email = "charlie@clemson.edu",
+                    UserRole = Role.Student,
+                    Passhash = BCrypt.Net.BCrypt.HashPassword("password")
+                }
+            };
+        }
+
+
+        public UserViewModel LoginWithCredentials(LoginInfoViewModel userInfo)
+        {
+            throw new NotImplementedException();
         }
 
         public void AddUser(UserViewModel user)
         {
-            return;
+            Users.Add(user);
         }
     }
 }

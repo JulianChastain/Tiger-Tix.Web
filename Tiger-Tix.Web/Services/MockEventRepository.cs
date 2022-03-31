@@ -6,29 +6,36 @@ namespace Tiger_Tix.Web.Services
 {
     public class MockEventRepository : IEventRepository
     {
-        public List<EventModel> Events()
+        private List<EventModel> _events;
+
+        public MockEventRepository()
         {
-            return new List<EventModel>
+            _events = new List<EventModel>
             {
-                new EventModel()
+                new()
                 {
-                    Name = "Blood Drive",
-                    Time = DateTime.Now,
-                    RemainingTickets = 42
+                     Name = "Blood Drive",
+                     Time = DateTime.Now,
+                     RemainingTickets = 42
                 },
-                new EventModel()
+                new()
                 {
-                    Name = "Football Game",
-                    Time = DateTime.Now,
-                    RemainingTickets = 69
+                     Name = "Football Game",
+                     Time = DateTime.Now,
+                     RemainingTickets = 69
                 },
-                new EventModel()
+                new()
                 {
-                    Name = "Hendrix Center Event",
-                    Time = DateTime.Now,
-                    RemainingTickets = 314
+                     Name = "Hendrix Center Event",
+                     Time = DateTime.Now,
+                     RemainingTickets = 314
                 },
             };
+            
+        }
+        public List<EventModel> Events()
+        {
+            return _events;
         }
     }
 }

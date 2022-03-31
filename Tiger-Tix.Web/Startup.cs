@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Tiger_Tix.Web.Services;
@@ -21,8 +22,14 @@ namespace Tiger_Tix.Web
         {
             services.AddControllersWithViews();
             //When the AppController class is instantiated, this services will be passed implicitly
-            services.AddSingleton<ILoginService, MockLoginService>();
-            services.AddSingleton<IEventRepository, MockEventRepository>();
+            services.AddDbContext<LoginService>(
+                cfg => { cfg.UseSqlServer();}
+            );
+            services.AddDbContext<EventRepository>(
+                cfg => { cfg.UseSqlServer();}
+            );
+            services.AddSingleton<ILoginService, LoginService>();
+            services.AddSingleton<IEventRepository, EventRepository>();
             services.AddRazorPages();
         }
 

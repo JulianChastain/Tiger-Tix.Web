@@ -4,9 +4,10 @@ namespace Tiger_Tix.Web.Models
 {
     public class EventModel
     {
-        public string Name;
-        public DateTime Time;
-        public int RemainingTickets;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public DateTime Time { get; set; }
+        public int RemainingTickets { get; set; }
 
         public override string ToString()
         {

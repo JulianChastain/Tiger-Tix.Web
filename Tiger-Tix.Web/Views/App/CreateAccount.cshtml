@@ -1,5 +1,5 @@
 ﻿@page
-@model LoginInfoViewModel
+@model UserViewModel
 
 @{
     Layout = "_Layout";
@@ -14,13 +14,21 @@
 <body>
 <div>
     @using(@Html.BeginForm("CreateAccount", "App", FormMethod.Post)){
-        <p>Here is where a user can create an account</p>
+        <p>Please enter the following information</p>
+        <div class="row">
+             <div class="col-sm">
+                 <label for="Name" class="form-label">Username</label>
+             </div>
+             <div class="col-md">
+                 @Html.TextBoxFor(m => m.Name, new {@placeholder = "name", @id = "Name", @class="form-control"})
+             </div>
+        </div>
         <div class="row">
             <div class="col-sm">
-                <label for="user" class="form-label">Username/Email</label>
+                <label for="user" class="form-label">Email</label>
             </div>
             <div class="col-md">
-                @Html.TextBoxFor(m => m.Username, new {@placeholder = "name@clemson.edu", @id = "user", @class="form-control"})
+                @Html.TextBoxFor(m => m.Email, new {@placeholder = "name@clemson.edu", @id = "user", @class="form-control"})
             </div>
         </div>
         <div class="row">
@@ -28,7 +36,7 @@
                 <label for="pass" class="form-label">Password</label>
             </div>
             <div class="col-md">
-                @Html.TextBoxFor(m => m.Password, new {@placeholder = "Password", @id="pass", @type="password", @class="form-control"})
+                @Html.TextBoxFor(m => m.Passhash, new {@placeholder = "Password", @id="pass", @type="password", @class="form-control"})
             </div>
         </div> <br/>
         <input type="submit" class="btn btn-primary" value="Create Account"/>
