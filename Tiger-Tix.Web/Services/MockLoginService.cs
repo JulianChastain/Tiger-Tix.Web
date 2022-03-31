@@ -8,10 +8,10 @@ namespace Tiger_Tix.Web.Services
 {
     public class MockLoginService : ILoginService
     {
-        private List<UserViewModel> _users;
+        public List<UserViewModel> Users { get; set; }
         public MockLoginService()
         {
-            _users = new List<UserViewModel>
+            Users = new List<UserViewModel>
             {
                 new()
                 {
@@ -38,14 +38,15 @@ namespace Tiger_Tix.Web.Services
             };
         }
 
-        public IEnumerable<UserViewModel> Users()
+
+        public UserViewModel LoginWithCredentials(LoginInfoViewModel userInfo)
         {
-            return _users;
+            throw new NotImplementedException();
         }
 
         public void AddUser(UserViewModel user)
         {
-            _users.Add(user);
+            Users.Add(user);
         }
     }
 }
