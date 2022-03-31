@@ -31,7 +31,7 @@ namespace Tiger_Tix.Web
             UserViewModel UserInfo = LoginService.LoginWithCredentials(model);
             if (UserInfo.UserRole != Role.InvalidLogin && UserInfo.UserRole != Role.InvalidPassword)
             {
-                UserInfo.AvailableEvents = Events.Events();
+                ViewBag.AvailableEvents = Events.Events();
                 return View("SplashPage", UserInfo);
             }
 
@@ -49,7 +49,7 @@ namespace Tiger_Tix.Web
         [HttpPost]
         public IActionResult CreateAccount(UserViewModel newUser)
         {
-            newUser.AvailableEvents = Events.Events();
+            ViewBag.AvailableEvents = Events.Events();
             newUser.UserRole = Role.Guest;
             newUser.Passhash = BCrypt.Net.BCrypt.HashPassword(newUser.Passhash);
             LoginService.AddUser(newUser);

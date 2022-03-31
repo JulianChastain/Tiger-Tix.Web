@@ -25,10 +25,12 @@
         You are a @Model.UserRole
     </p>
     <br/>
-    @Html.ListBox( "Available Events are:", Model.AvailableEvents.Select( e => new SelectListItem
+    @{
+        List<EventModel> available = (List<EventModel>)ViewBag.AvailableEvents;
+    }
+    @Html.ListBox( "Available Events are:", available.Select( e => new SelectListItem
             {
                 Text = e.ToString(),
-                Value = Model.AvailableEvents.IndexOf(e).ToString(),
                 onselect = myTix
     
             }))
