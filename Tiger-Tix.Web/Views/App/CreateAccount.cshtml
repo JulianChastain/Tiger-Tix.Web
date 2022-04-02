@@ -39,8 +39,6 @@
                 @Html.TextBoxFor(m => m.Passhash, new {@placeholder = "Password", @id="pass", @type="password", @class="form-control"})
             </div>
         </div> <br/>
-	<p>What kind of account is it? </p>
-	@Html.EnumDropDownListFor(m => m.UserRole) <br/>
         <input type="submit" class="btn btn-primary" value="Create Account"/>
     }
 </div>

@@ -50,6 +50,7 @@ namespace Tiger_Tix.Web
         public IActionResult CreateAccount(UserViewModel newUser)
         {
             ViewBag.AvailableEvents = Events.Events();
+            newUser.UserRole = Role.Guest;
             newUser.Passhash = BCrypt.Net.BCrypt.HashPassword(newUser.Passhash);
             LoginService.AddUser(newUser);
             return View("SplashPage", newUser);
