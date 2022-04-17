@@ -36,6 +36,27 @@
         Text = e.ToString()
                 
     }))
+    
+    <details>
+        <summary>Test Event</summary>
+        <p>Test Event will take place on July 24th, 2022 at 12:00 AM. There are currently 
+            60 tickets remaining for this event.</p>
+    </details>
+    
+    <br/>
+        <label for="events">Choose an event:
+            
+        </label>
+        <select id="Available_Events_are" name="Available_Events_are">
+            <option value=""></option>
+            @foreach (var e in available)
+            {
+                <option value="@e.Id">@e.Name</option>
+            }
+    </select>
+    <br><br>
+        <input type="submit" value="Purchase Ticket" />
+        </form>
 </div>
 </body>
 <footer>
