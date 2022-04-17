@@ -15,9 +15,7 @@
     {
         alert("There are 100 tickets remaining for this event.")
     }
-    
     $("#Available_Events_are:").change(myTix);
- 
     //http://jsfiddle.net/pD56G/1/
     </script>
 </head>
@@ -32,11 +30,17 @@
     @{
         List<EventModel> available = (List<EventModel>)ViewBag.AvailableEvents;
     }
-    @Html.ListBox( "Available Events are:", available.Select( e => new SelectListItem
-            {
-                Text = e.ToString()
+    <p>Available Events Are:</p>
+    @Html.ListBox( "Events", available.Select( e => new SelectListItem
+    {
+        Text = e.ToString()
                 
-            }))
+    }))
 </div>
 </body>
+<footer>
+    <script>
+        $("#Events").change(myTix);
+    </script>
+</footer>
 </html>
