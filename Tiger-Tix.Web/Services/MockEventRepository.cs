@@ -37,5 +37,9 @@ namespace Tiger_Tix.Web.Services
         {
             return _events;
         }
+
+        public void AddEvent(EventModel eventModel)
+        {
+        }
     }
 }

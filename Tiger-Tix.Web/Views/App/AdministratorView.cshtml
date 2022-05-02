@@ -1,6 +1,6 @@
 ﻿@page
 @using Tiger_Tix.Web.Views.Shared
-@model Tiger_Tix.Web.Views.App.AdministratorView
+@model EventModel
 
 @{
     Layout = "_Layout";
@@ -15,7 +15,35 @@
 <body>
 <p>Here is where an administrator can edit the database</p>
 <div>
-
+    @using(@Html.BeginForm("CreateAccount", "App", FormMethod.Post)){
+        <p>Welcome Administrator</p>
+        <p>Please enter the information for an event</p>
+        <div class="row">
+             <div class="col-sm">
+                 <label for="Name" class="form-label">Event Name</label>
+             </div>
+             <div class="col-md">
+                 @Html.TextBoxFor(m => m.Name, new {@placeholder = "Football Game", @id = "Name", @class="form-control"})
+             </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <label for="Time" class="form-label">Event Time</label>
+            </div>
+            <div class="col-md">
+                @Html.TextBoxFor(m => m.Time, new {@id = "Time", @class="form-control", @type="date"})
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <label for="pass" class="form-label">Number of Tickets</label>
+            </div>
+            <div class="col-md">
+                @Html.TextBoxFor(m => m.RemainingTickets, new {@placeholder = "10", @id="pass", @type="number", @class="form-control"})
+            </div>
+        </div> <br/>
+        <input type="submit" class="btn btn-primary" value="Create Event"/>
+    }
 </div>
 </body>
 </html>

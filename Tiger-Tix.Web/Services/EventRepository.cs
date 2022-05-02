@@ -26,5 +26,11 @@ namespace Tiger_Tix.Web.Services
         {
             return (from e in _Events select e).ToList();
         }
+        
+        public void AddEvent(EventModel eventInfo)
+        {
+            _Events.Add(eventInfo);
+            SaveChanges();
+        }
     }
 }

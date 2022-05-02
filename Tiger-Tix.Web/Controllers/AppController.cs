@@ -31,10 +31,11 @@ namespace Tiger_Tix.Web
             UserViewModel UserInfo = LoginService.LoginWithCredentials(model);
             if (UserInfo.UserRole != Role.InvalidLogin && UserInfo.UserRole != Role.InvalidPassword)
             {
+                if(UserInfo.UserRole == Role.Administrator)
+                    return View("AdministratorView");
                 ViewBag.AvailableEvents = Events.Events();
                 return View("SplashPage", UserInfo);
             }
-
             ViewBag.error = UserInfo.UserRole == Role.InvalidPassword;
             ViewBag.noaccount = UserInfo.UserRole == Role.InvalidLogin;
             return View("index");
@@ -55,5 +56,12 @@ namespace Tiger_Tix.Web
             LoginService.AddUser(newUser);
             return View("SplashPage", newUser);
         }
+
+        [HttpPut]
+        public IActionResult EditEvent(EventModel newEvent) { 
+            Events.AddEvent(newEvent);
+            return View("AdministratorView");
+        }
+        
     }
 }
